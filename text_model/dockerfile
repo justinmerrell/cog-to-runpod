@@ -1,0 +1,5 @@
+FROM r8.im/replicate/llama-7b@sha256:ac808388e2e9d8ed35a5bf2eaa7d83f0ad53f9e3df31a42e4eb0a0c3249b3165
+
+# Stay running
+# CMD ["tail", "-f", "/dev/null"]
+CMD ["python", "-m", "cog.server.http"]
